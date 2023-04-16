@@ -82,8 +82,13 @@
     key.classList.add('playing');
   }); 
 
-  // fixed bug that doesnt remove the class after a new key is pressed
-  // transition end event; on each key listen for when an event ends
+    // fixed bug that doesnt remove the class after a new key is pressed
+    // transition end event; on each key listen for when an event ends
+    function removeTransition(event) {
+      console.log(event);
+    }
+
+
     // select all keys
     const keys = document.querySelectorAll('.key');
     // for each key listen for event end
