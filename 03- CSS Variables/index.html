@@ -29,7 +29,11 @@
     
     function handleUpdate() {
       // this will print the value that's changed so the value of the input that is changed (color, spacing or blur)
-      console.log(this.value);
+      // console.log(this.value);
+
+      //this will print all of the data that we made up (in our case data-sizing so sizing) //this prints an object for us
+      const suffix = this.dataset.sizing || ''; // in the case where we dont have a data set like with color, we want to append nothing or else it will return undefined at the end
+      console.log(suffix);
     }
 
     // listen for a change event on each input
