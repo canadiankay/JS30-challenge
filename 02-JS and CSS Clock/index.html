@@ -43,6 +43,7 @@
       // grab the minutes and figure out degrees
       const minutes = now.getMinutes();
       const minsDegrees = ((minutes / 60) * 360) + 90;
+      minHand.style.transform = `rotate(${minsDegrees}deg)`
     }
 
     // want second hand to run every second
