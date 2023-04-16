@@ -62,16 +62,9 @@
 
   // play sound
   function playSound(event) {
-  
-    // console.log(event.keyCode); //this code prints the key that is pressed
-
-    //link the audio element that corresponds to the letter 'a''s keycode'
-    // in our case prints 65 for 'A'
-    // we only wanna select one so we dont use all
 
     //selectors
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
-    // we want to select key to update the css to show a key is pressed
     const key = document.querySelector(`.key[data-key="${event.keyCode}"]`);
 
     if(!audio) return; // stops the fxn from running
@@ -79,31 +72,25 @@
     // playsound associated with key
     audio.currentTime = 0;// rewind to start if a key is repeatedly pressed
     audio.play();
-    // if we hit the same key over and over again, it wont start playing until prev is done so there's a lag
 
     // update key styling when playing
     key.classList.add('playing');
   }; 
 
-    // fixed bug that doesnt remove the class after a new key is pressed
-    // transition end event; on each key listen for when an event ends
-    function removeTransition(event) {
-      // console.log(event);
-      if (event.propertyName !== 'transform') return; // this will skip it if it's not a transform
-      // console.log(event.propertyName); // this printed multiple events for each item that transitioned but we only care about transform
-      this.classList.remove('playing'); //this will remove the class playing once transform time is completed
-      // console.log(this) = is whatever was called against it so in our case the actual key
-    }
+
+  // transition end event; remove class after new key is pressed
+  function removeTransition(event) {
+    if (event.propertyName !== 'transform') return; 
+    this.classList.remove('playing'); //this will remove the class playing once transform time is completed
+    // console.log(this) = is whatever was called against it so in our case the actual key
+  }
 
 
-    // select all keys
-    const keys = document.querySelectorAll('.key');
-    // for each key listen for event end
-    // each key gets an event listener added to it then when it ends we remove it
-    keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-    // event listener when a key is pressed
-    window.addEventListener('keydown', playSound);
-    
+  // select all keys and for each key, listen for event end
+  const keys = document.querySelectorAll('.key');
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  // event listener when a key is pressed
+  window.addEventListener('keydown', playSound);
 
 </script>
 
