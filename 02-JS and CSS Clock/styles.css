@@ -47,6 +47,6 @@ body {
   /* default for elements is block (left to right)*/
   transform: rotate(90deg); /*to make sure it rotates like a clock hand*/
   /* styling to make the hand tick */
-  transition: all 0.05s;
+  /*transition: all 0.05s; */ /*removed this to prevent the jerking motion when second hand goes back to 0 (or in our case 90 degrees*/
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.22, 0.57);
 }
