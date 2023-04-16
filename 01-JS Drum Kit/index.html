@@ -85,7 +85,9 @@
     // fixed bug that doesnt remove the class after a new key is pressed
     // transition end event; on each key listen for when an event ends
     function removeTransition(event) {
-      console.log(event);
+      // console.log(event);
+      if (event.propertyName !== 'transform') return; // this will skip it if it's not a transform
+      console.log(event.propertyName); // this printed multiple events for each item that transitioned but we only care about transform
     }
 
 
