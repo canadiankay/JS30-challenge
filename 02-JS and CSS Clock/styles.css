@@ -44,4 +44,6 @@ body {
   position: absolute;
   top: 50%;
   transform-origin: 100%; /*default is 50%*/
+  /* default for elements is block (left to right)*/
+  transform: rotate(90deg); /*to make sure it rotates like a clock hand*/
 }
