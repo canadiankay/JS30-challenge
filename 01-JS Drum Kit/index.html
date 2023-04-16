@@ -59,13 +59,16 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
-  // we want to listen to the key up event when a key is pressed
-  window.addEventListener('keydown', function (event) {
+
+  // play sound
+  function playSound(event) {
+  
     // console.log(event.keyCode); //this code prints the key that is pressed
 
     //link the audio element that corresponds to the letter 'a''s keycode'
     // in our case prints 65 for 'A'
     // we only wanna select one so we dont use all
+
     //selectors
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
     // we want to select key to update the css to show a key is pressed
@@ -80,7 +83,7 @@
 
     // update key styling when playing
     key.classList.add('playing');
-  }); 
+  }; 
 
     // fixed bug that doesnt remove the class after a new key is pressed
     // transition end event; on each key listen for when an event ends
@@ -98,6 +101,9 @@
     // for each key listen for event end
     // each key gets an event listener added to it then when it ends we remove it
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    // event listener when a key is pressed
+    window.addEventListener('keydown', playSound);
+    
 
 </script>
 
