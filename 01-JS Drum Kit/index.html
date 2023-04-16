@@ -72,7 +72,9 @@
     if(!audio) return; // stops the fxn from running
 
     // playsound associated with key
+    audio.currentTime = 0;// rewind to start if a key is repeatedly pressed
     audio.play();
+    // if we hit the same key over and over again, it wont start playing until prev is done so there's a lag
   }); 
 
 </script>
