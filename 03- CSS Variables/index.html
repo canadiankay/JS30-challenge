@@ -31,6 +31,9 @@
       // this will print the value that's changed so the value of the input that is changed (color, spacing or blur)
       console.log(this.value);
     }
+
+    // listen for a change event on each input
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
   
   </script>
 
