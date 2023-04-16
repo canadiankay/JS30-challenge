@@ -33,7 +33,12 @@
 
       //this will print all of the data that we made up (in our case data-sizing so sizing) //this prints an object for us
       const suffix = this.dataset.sizing || ''; // in the case where we dont have a data set like with color, we want to append nothing or else it will return undefined at the end
-      console.log(suffix);
+      // console.log(suffix);
+
+      // update the actual variable
+      // console.log(this.name); // this prints the 'name' of the variables and in our case the ones with the name attribute: name, blur, spcaing
+      // we want to change the variables to the chosen value so we append it
+      document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix) ;
     }
 
     // listen for a change event on each input
