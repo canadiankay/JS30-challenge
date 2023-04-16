@@ -67,7 +67,9 @@
     // in our case prints 65 for 'A'
     // we only wanna select one so we dont use all
     const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
-    console.log(audio);
+    // console.log(audio);
+
+    if(!audio) return; // stops the fxn from running
   }); 
 
 </script>
