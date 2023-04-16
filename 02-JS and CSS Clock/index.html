@@ -30,7 +30,7 @@
       // grab the seconds
       const seconds = now.getSeconds();
       // we need to get these seconds into a degree so it knows how to tick 
-      const secondsDegrees = ((seconds / 60) * 360);
+      const secondsDegrees = ((seconds / 60) * 360) + 90;
       console.log(seconds);
 
       // apply styles to the second hand
