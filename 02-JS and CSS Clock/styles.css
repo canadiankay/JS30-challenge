@@ -46,4 +46,7 @@ body {
   transform-origin: 100%; /*default is 50%*/
   /* default for elements is block (left to right)*/
   transform: rotate(90deg); /*to make sure it rotates like a clock hand*/
+  /* styling to make the hand tick */
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.22, 0.57);
 }
