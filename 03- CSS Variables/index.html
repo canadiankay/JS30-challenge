@@ -34,6 +34,7 @@
 
     // listen for a change event on each input
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate)); //this will trigger value as I move as well
   
   </script>
 
