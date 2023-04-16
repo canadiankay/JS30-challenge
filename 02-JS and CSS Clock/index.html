@@ -21,7 +21,11 @@
   
     //create function for second hand
     function setDate() {
-      console.log('Hi');
+      // grab date
+      const now = new Date();
+      // grab the seconds
+      const seconds = now.getSeconds();
+      console.log(seconds);
     }
 
     // want second hand to run every second
