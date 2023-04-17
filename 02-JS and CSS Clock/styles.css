@@ -15,6 +15,11 @@ body {
   align-items: center;
 }
 
+.digital-mode {
+  background: #001624;
+  color: white;
+}
+
 .clock {
   width: 30rem;
   height: 30rem;
