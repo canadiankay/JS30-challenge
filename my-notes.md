@@ -4,7 +4,7 @@
 - complete a project a day
 - create a website that hosts all of these projects (e.g. [like this](https://kellychi22.github.io/JavaScript30/) )~
 - update and customize each challenge
-  - Day 1: add duff or nasheed sounds and change background
+  - Day 1: add duff or nasheed sounds and change background ✅
   - Day 2: change background, display digital clock and give users ability to switch between digital and analog mode
   - Day 3: change background, add more properties
 
