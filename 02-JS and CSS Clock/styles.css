@@ -9,6 +9,8 @@
   --toggle-btn-pos: 0.22rem;
   --sun-color: #997f44;
   --moon-color: #B1B0B5;
+
+  --clock-hands: #ffd900;
 }
 
 :root[data-theme="dark"] {
@@ -18,9 +20,15 @@
 
   --toggle-bg: #1d1c23;
   --toggle-btn: #7190FF;
-  --toggle-btn-pos: 2.88rem;
+  --toggle-btn-pos: 4.55rem;
   --sun-color: #B1B0B5;
   --moon-color: #fefeff;
+
+  --clock-hands: #a600ff;
+}
+
+:root {
+  --clock-border: white;
 }
 
 html {
@@ -97,7 +105,7 @@ icon moon #B1B0B5
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 20px solid white;
+  border: 20px solid var(--clock-border);
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
@@ -119,7 +127,7 @@ icon moon #B1B0B5
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: var(--clock-hands);
   position: absolute;
   top: 50%;
   transform-origin: 100%; /*default is 50%*/
