@@ -27,7 +27,7 @@ sun icon color: #997f44
 icon moon #B1B0B5
  */
 /* default */
-.theme-switcher {
+#theme-switcher {
   background-color: #F5F5F6;
   border-radius: 50px;
   display: flex;
@@ -37,6 +37,21 @@ icon moon #B1B0B5
   width: 72px;
   height: 34px;
   padding: 5px;
+  position: relative;
+}
+
+#theme-switcher::before {
+  position: absolute;
+  content: '';
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color:#f3b21b;
+  border-radius: 50px;
+  z-index: 0;
+}
+
+#theme-switcher svg {
+  z-index: 1;
 }
 
 #sun-icon {
