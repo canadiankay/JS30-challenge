@@ -23,7 +23,7 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
-    
+
     <p>Current Time: <span id="current-time"></span></p>
   </div>
 
@@ -59,7 +59,8 @@
       let timeHour = now.getHours();
       let timeMinutes = (now.getMinutes()<10?'0':'') + now.getMinutes();
       let timeSeconds = (now.getSeconds()<10?'0':'') + now.getSeconds();
-      let currentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds;
+      let timeOfDay = (now.getHours()<13?' AM':' PM'); //this will print AM or PM
+      let currentTime = timeHour + ":" + timeMinutes + ":" + timeSeconds + timeOfDay;
       // console.log(currentTime);
       document.getElementById("current-time").textContent = currentTime; //it will print on html page
     };
