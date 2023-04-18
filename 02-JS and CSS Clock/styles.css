@@ -48,6 +48,8 @@ icon moon #B1B0B5
   background-color:#f3b21b;
   border-radius: 50px;
   z-index: 0;
+  left: 0;
+  transform: translateX(3px);
 }
 
 #theme-switcher svg {
