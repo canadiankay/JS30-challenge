@@ -11,6 +11,18 @@
   --moon-color: #B1B0B5;
 }
 
+:root[data-theme="dark"] {
+  --page-bg: #00101b url(https://unsplash.it/1500/1000?image=881&blur=5);
+
+  --primary-text: #c6b8e6;
+
+  --toggle-bg: #1d1c23;
+  --toggle-btn: #7190FF;
+  --toggle-btn-pos: 2.88rem;
+  --sun-color: #B1B0B5;
+  --moon-color: #fefeff;
+}
+
 html {
   background: var(--page-bg);
   background-size: cover;
