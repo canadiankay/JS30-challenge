@@ -6,7 +6,7 @@
 
   --toggle-bg: #F5F5F6;
   --toggle-btn: #f3b21b;
-  --toggle-btn-pos: 0.22rem;
+  --toggle-btn-pos: 0.38rem;
   --sun-color: #997f44;
   --moon-color: #B1B0B5;
 
@@ -20,7 +20,7 @@
 
   --toggle-bg: #1d1c23;
   --toggle-btn: #7190FF;
-  --toggle-btn-pos: 4.55rem;
+  --toggle-btn-pos: 4.8rem;
   --sun-color: #B1B0B5;
   --moon-color: #fefeff;
 
@@ -69,7 +69,7 @@ icon moon #B1B0B5
   cursor: pointer;
   width: 72px;
   height: 34px;
-  padding: 5px;
+  padding: 6px;
   position: relative;
 }
 
