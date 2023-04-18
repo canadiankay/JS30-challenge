@@ -29,6 +29,7 @@
 
 :root {
   --clock-border: white;
+  --default-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, fill .3s ease-in-out, transform .3s ease-in-out;
 }
 
 html {
@@ -74,6 +75,7 @@ icon moon #B1B0B5
   height: 34px;
   padding: 6px;
   position: relative;
+  transform: var(--default-transition);
 }
 
 #theme-switcher::before {
@@ -86,6 +88,7 @@ icon moon #B1B0B5
   z-index: 0;
   left: 0;
   transform: translateX(var(--toggle-btn-pos));
+  transition: var(--default-transition);
 }
 
 #theme-switcher svg {
