@@ -67,9 +67,11 @@
     function switchTheme() {
       // get root element and data-theme value
       const rootElement = document.documentElement; //this refers to the html tag
-      let theme = rootElement.getAttribute('data-theme');
+      let currentTheme = rootElement.getAttribute('data-theme');
       let newTheme;
 
+      // if statement- if theme = light then newTheme will be dark, else light
+      newTheme = (currentTheme=== 'light') ? 'dark' : 'light';
     }
 
     // event lister for theme switcher
