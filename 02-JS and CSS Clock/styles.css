@@ -1,5 +1,17 @@
+:root{
+  --page-bg: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+
+  --primary-text: #91896d;
+
+  --toggle-bg: #F5F5F6;
+  --toggle-btn: #f3b21b;
+  --toggle-btn-pos: 0.22rem;
+  --sun-color: #997f44;
+  --moon-color: #B1B0B5;
+}
+
 html {
-  background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background: var(--page-bg);
   background-size: cover;
   font-family: 'helvetica neue';
   text-align: center;
@@ -28,7 +40,7 @@ icon moon #B1B0B5
  */
 /* default */
 #theme-switcher {
-  background-color: #F5F5F6;
+  background-color: var(--toggle-bg);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -45,7 +57,7 @@ icon moon #B1B0B5
   content: '';
   width: 3.2rem;
   height: 3.2rem;
-  background-color:#f3b21b;
+  background-color:var(--toggle-btn);
   border-radius: 50px;
   z-index: 0;
   left: 0;
@@ -57,11 +69,11 @@ icon moon #B1B0B5
 }
 
 #sun-icon {
-  fill: #997f44;
+  fill: var(--sun-color);
 }
 
 #moon-icon {
-  fill: #B1B0B5;
+  fill: var(--moon-color);
 }
 
 /* .digital-mode {
