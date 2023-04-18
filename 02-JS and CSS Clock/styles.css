@@ -14,7 +14,7 @@
 }
 
 :root[data-theme="dark"] {
-  --page-bg: #00101b url(./docs/night-sky-bg.jpeg) blur="5";
+  --page-bg: #00101b url(./docs/night-sky-bg.jpeg);
 
   --primary-text: #c6b8e6;
 
