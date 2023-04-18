@@ -72,6 +72,9 @@
 
       // if statement- if theme = light then newTheme will be dark, else light
       newTheme = (currentTheme=== 'light') ? 'dark' : 'light';
+
+      // set the new HTML attribute
+      rootElement.setAttribute('data-theme', newTheme);
     }
 
     // event lister for theme switcher
