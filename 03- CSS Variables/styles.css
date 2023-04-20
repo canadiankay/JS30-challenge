@@ -3,12 +3,14 @@
   --spacing: 10px;
   --blur: 10px;
   --brightness: 100%;
+  --border: 0px;
 }
 
 img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur)) brightness(var(--brightness));
+  
 }
 
 .hl {
