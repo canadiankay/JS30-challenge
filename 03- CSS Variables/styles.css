@@ -10,7 +10,7 @@ img {
   padding: var(--spacing);
   background: var(--base);
   filter: blur(var(--blur)) brightness(var(--brightness));
-  
+  border-radius: var(--border);
 }
 
 .hl {
@@ -23,7 +23,15 @@ body {
   color: white;
   font-family: 'helvetica neue', sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .controls {
