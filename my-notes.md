@@ -24,3 +24,8 @@
 - `<input type="range">` HTML property that shows a line-bar that you can drag
 - set a variable in `:root` in *CSS styles* then use this format to use the variable: `var(--*variable name*)`
 - `CSSStyleDeclaration.setProperty` used to update the CSS styling
+
+
+### Day 4:
+- `console.table` instead of `console.log` to display results in a table
+- filter method loops over each item in an array 
