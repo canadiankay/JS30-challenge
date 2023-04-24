@@ -78,7 +78,10 @@
     const category = document.querySelector('.mw-category');
     
     // find and select the links within each category
-    const links = category.querySelectorAll('a'); 
+    // const links = category.querySelectorAll('a'); //returns every single link as a Nodelist on the page
+    // need to turn links into an array two ways:
+    const links = Array.from(category.querySelectorAll('a')); // OR const links = [...category.querySelectorAll('a')];
+
 
 
     // 7. sort Exercise
