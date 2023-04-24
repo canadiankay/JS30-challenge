@@ -85,6 +85,8 @@
     // convert list of names into strings
     const boulevards = links.map(link => link.textContent); 
 
+    // then filter list to only include 'de' names
+    const deNames = boulevards.filter(blvd => blvd.includes('de'));
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
