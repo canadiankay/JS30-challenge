@@ -95,8 +95,10 @@
     const sorted = people.sort(function(firstPerson, secondPerson) {
       // we want to separate the first and last names and what they have in common are the comma and space
       const [firstPersonLastName, firstPersonFirstName] = firstPerson.split(', ');
-      const [secondPersonLastName, secondPersonFirstName] = secondPerson.split(', ')
+      const [secondPersonLastName, secondPersonFirstName] = secondPerson.split(', ');
+      return firstPersonLastName > secondPersonLastName ? 1 : -1;
     })
+    console.log(sorted);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
