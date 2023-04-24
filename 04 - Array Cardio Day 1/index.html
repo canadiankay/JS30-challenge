@@ -82,6 +82,8 @@
     // need to turn links into an array two ways:
     const links = Array.from(category.querySelectorAll('a')); // OR const links = [...category.querySelectorAll('a')];
 
+    // convert list of names into strings
+    const boulevards = links.map(link => link.textContent); 
 
 
     // 7. sort Exercise
