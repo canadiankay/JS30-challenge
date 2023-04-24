@@ -65,15 +65,11 @@
     const oldestInventor = inventors.sort(function (first, second) {
       const firstInventor = first.passed - first.year;
       const secondInventor = second.passed - second.year;
-      if (firstInventor > secondInventor) {
-        return 1;
-      } else {
-        return -1;
-      }
+      return firstInventor > secondInventor ? 1 : -1;
     });
 
     console.table(oldestInventor);
-    
+
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
