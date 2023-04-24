@@ -98,12 +98,25 @@
       const [secondPersonLastName, secondPersonFirstName] = secondPerson.split(', ');
       // by doing the above and reconstructing we keep the original values with a comma insetad of converting it all into a bunch of arrays
       return firstPersonLastName > secondPersonLastName ? 1 : -1;
-    })
-    console.log(sorted);
+    });
+    // console.log(sorted);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    // tally all repeated instances
+
+    const transportation = data.reduce((object, value) => {
+
+    }, {
+      car: 0,
+      truck: 0,
+      bike: 0, 
+      van: 0,
+      walk: 0
+    });// initialize value object
+    
+
 
   </script>
 </body>
