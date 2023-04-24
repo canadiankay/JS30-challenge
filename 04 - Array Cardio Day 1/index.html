@@ -92,10 +92,10 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-    const sorted = people.sort(function(first, second) {
+    const sorted = people.sort(function(firstPerson, secondPerson) {
       // we want to separate the first and last names and what they have in common are the comma and space
-      const [lastName, firstName] = first.split(', ');
-      console.log(lastName, firstName); // gives us the names without the comma
+      const [firstPersonLastName, firstPersonFirstName] = firstPerson.split(', ');
+      const [secondPersonLastName, secondPersonFirstName] = secondPerson.split(', ')
     })
 
     // 8. Reduce Exercise
