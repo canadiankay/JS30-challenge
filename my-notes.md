@@ -31,3 +31,4 @@
 - filter method loops over each item in an array 
 - map method takes in an array, does something, and returns a new array of the same length
 - sort method sorts/compares two items at a time by criteria, return 1 (for item that satisfies) and -1 (for item that doesnt) moving them up and down the array (index-wise)
+- reduce method will take in an array and allow us to build on each value in an array and cleaner than using a 'for' loop to add/subtract +=/-= an initial value and grow on it by giving us a running total after looping through each item in an array
