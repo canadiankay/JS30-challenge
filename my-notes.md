@@ -31,9 +31,12 @@
 - filter method loops over each item in an array 
 - map method takes in an array, does something, and returns a new array of the same length
 - sort method sorts/compares two items at a time by criteria, return 1 (for item that satisfies) and -1 (for item that doesnt) moving them up and down the array (index-wise)
-- reduce method will take in an array and allow us to build on each value in an array and cleaner than using a 'for' loop to add/subtract +=/-= an initial value and grow on it by giving us a running total after looping through each item in an array
-- you can shorten the way you apply multiple methods to set a data (see code)
-- e.g. convert list of names into strings `const boulevards = links.map(link => link.textContent);` then filter list to only include 'de' names `const deNames = boulevards.filter(blvd => blvd.includes('de'));` --> instead you can do the following: 
+- reduce method 
+  - one of the most flexible methods
+  - will take in an array and allow us to build on each value in an array and cleaner than using a 'for' loop to add/subtract +=/-= an initial value and grow on it by giving us a running total after looping through each item in an array
+  - you can shorten the way you apply multiple methods to set a data (see code)
+  - e.g. convert list of names into strings `const boulevards = links.map(link => link.textContent);` then filter list to only include 'de' names `const deNames = boulevards.filter(blvd => blvd.includes('de'));` --> instead you can do the following: 
     `const deNames = links`
                       `.map(link => link.textContent)`
                       `.filter(blvd => blvd.includes('de'));`
+- split method takes in a pattern and turns a string into a new array of substrings without changing the original string
