@@ -30,3 +30,4 @@
 - `console.table` instead of `console.log` to display results in a table
 - filter method loops over each item in an array 
 - map method takes in an array, does something, and returns a new array of the same length
+- sort method sorts/compares two items at a time by criteria, return 1 (for item that satisfies) and -1 (for item that doesnt) moving them up and down the array (index-wise)
