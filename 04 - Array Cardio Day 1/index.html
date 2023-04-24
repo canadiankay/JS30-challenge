@@ -75,20 +75,20 @@
 
     // first we need to get each item using DOM
     // we need to find out which category each one is in
-    const category = document.querySelector('.mw-category');
+    // const category = document.querySelector('.mw-category');
     
-    // find and select the links within each category
-    // const links = category.querySelectorAll('a'); //returns every single link as a Nodelist on the page
-    // need to turn links into an array two ways:
-    const links = Array.from(category.querySelectorAll('a')); // OR const links = [...category.querySelectorAll('a')];
+    // // find and select the links within each category
+    // // const links = category.querySelectorAll('a'); //returns every single link as a Nodelist on the page
+    // // need to turn links into an array two ways:
+    // const links = Array.from(category.querySelectorAll('a')); // OR const links = [...category.querySelectorAll('a')];
 
-    // convert list of names into strings
+    // // convert list of names into strings
   
 
-    // then filter list to only include 'de' names
-    const deNames = links
-                      .map(link => link.textContent) 
-                      .filter(blvd => blvd.includes('de'));
+    // // then filter list to only include 'de' names
+    // const deNames = links
+    //                   .map(link => link.textContent) 
+    //                   .filter(blvd => blvd.includes('de'));
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
