@@ -94,8 +94,8 @@
     // Sort the people alphabetically by last name
     const sorted = people.sort(function(first, second) {
       // we want to separate the first and last names and what they have in common are the comma and space
-      const nameParts = first.split(', ');
-      console.log(nameParts); // gives us a list of all names
+      const [lastName, firstName] = first.split(', ');
+      console.log(lastName, firstName); // gives us the names without the comma
     })
 
     // 8. Reduce Exercise
