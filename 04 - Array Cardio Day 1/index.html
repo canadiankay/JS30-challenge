@@ -59,10 +59,21 @@
       return total + (inventor.passed - inventor.year); //, and from that, it gives us the total (from before), and number of years that the inventor lived
     }, 0); //we need this as the initial value to add everything to
 
-    console.log(totalYears);
+    // console.log(totalYears);
 
     // 5. Sort the inventors by years lived
+    const oldestInventor = inventors.sort(function (first, second) {
+      const firstInventor = first.passed - first.year;
+      const secondInventor = second.passed - second.year;
+      if (firstInventor > secondInventor) {
+        return 1;
+      } else {
+        return -1;
+      }
+    });
 
+    console.table(oldestInventor);
+    
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
