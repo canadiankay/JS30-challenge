@@ -68,7 +68,7 @@
       return firstInventor > secondInventor ? 1 : -1;
     });
 
-    console.table(oldestInventor);
+    // console.table(oldestInventor);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -106,10 +106,24 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
     // tally all repeated instances
 
-    const transportation = data.reduce((object, value) => {
+    const transportation = data.reduce((object, item) => {
+      // console.log(item);
 
+      //first we have an empty object
+      // loop over each item
+      
+      // we need to check if an instance exists 
+      if (!object[item]) {
+        object[item] = 0; //this will set the initial pair to 0
+      } 
+
+      //then we increment item
+      object[item]++; // what this does if we have item (e.g. walk = 0) then it will increment it to 1
+      
+
+      return object; //at the end we want to return object with all instances
     }, {});// initialize value object - want it to be empty and not hardcoded
-    
+    console.log(transportation);
 
 
   </script>
