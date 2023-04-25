@@ -40,3 +40,7 @@
                       `.map(link => link.textContent)`
                       `.filter(blvd => blvd.includes('de'));`
 - split method takes in a pattern and turns a string into a new array of substrings without changing the original string
+
+### Day 5:
+- an element in CSS can be both a flex item and flex container
+- default of flexbox stacks items left to right
