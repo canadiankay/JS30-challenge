@@ -44,3 +44,4 @@
 ### Day 5:
 - an element in CSS can be both a flex item and flex container
 - default of flexbox stacks items left to right
+- flex: 1 (takes up an even amount of room) vs flex: 5 (element will take up 5x as much room)
