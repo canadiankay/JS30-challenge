@@ -63,6 +63,26 @@ body {
   align-items: center;
 }
 
+/* we want to move the text at the top row all the way up */
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+
+/* when we turn off the transform, and give any panel a class called 'open active' and move to 0 */
+.panel.open.active > *:first-child {
+  transform: translateY(0);
+}
+
+/* we want to move the text at the bottom row all the way down */
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+
+/* when we turn off the transform, and give any panel a class called 'open active' and move to 0 */
+.panel.open.active > *:last-child {
+  transform: translateY(0);
+}
+
 .panel p {
   text-transform: uppercase;
   font-family: 'Amatic SC', cursive;
