@@ -58,6 +58,7 @@ body {
   width: 100%;
   transition: transform 0.5s;
   border: 1px solid red; /* to see what's going on */
+  flex: 1px 0 auto; /* want each item/text to take up one third of the panel */
 }
 
 .panel p {
