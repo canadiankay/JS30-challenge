@@ -38,6 +38,7 @@ body {
   background-position: center;
   /* each panel is as big as the words- this will distribute extra space amongst each other */
   flex: 1;
+  justify-content: center; /* this centers text left to right */
 }
 
 .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
