@@ -51,6 +51,7 @@ body {
   margin: 0;
   width: 100%;
   transition: transform 0.5s;
+  border: 1px solid red; /* to see what's going on */
 }
 
 .panel p {
