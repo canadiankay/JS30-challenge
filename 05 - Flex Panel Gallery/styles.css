@@ -93,6 +93,8 @@ body {
   font-size: 4em;
 }
 
+/* when panel has class open */
 .panel.open {
+  flex: 5; /*this means that it will take five times the amount of room as the rest of the items and it transitions as per the transiiton in the panel styling*/
   font-size: 40px;
 }
