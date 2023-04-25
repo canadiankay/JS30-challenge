@@ -42,6 +42,8 @@ body {
   align-items: center;
   /* nest flexbox */
   display: flex;
+  /* we want items to stack on top of each */
+  flex-direction: column;
 }
 
 .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
