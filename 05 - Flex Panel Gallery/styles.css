@@ -17,6 +17,8 @@ body {
 .panels {
   min-height: 100vh;
   overflow: hidden;
+  /* we want panels to display side by side */
+  display: flex;
 }
 
 .panel {
@@ -34,6 +36,8 @@ body {
   font-size: 20px;
   background-size: cover;
   background-position: center;
+  /* each panel is as big as the words- this will distribute extra space amongst each other */
+  flex: 1;
 }
 
 .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
