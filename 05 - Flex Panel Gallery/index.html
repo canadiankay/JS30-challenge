@@ -38,10 +38,11 @@
 
   <script>
     // when panels clicked, adding and removing of spacing
-    const panels = document.querySelectorAll('.panels'); // returns node list
+    const panels = document.querySelectorAll('.panel'); // returns node list
 
     // function that will toggle the 'on/open' class
     function toggleOpenPanel() {
+      console.log('Hello')
       this.classList.toggle('open');
     };
     
