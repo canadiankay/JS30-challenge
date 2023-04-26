@@ -45,9 +45,11 @@
       console.log('Hello')
       this.classList.toggle('open');
     };
-    
+
     // on each panel we will listen for click on each of them then run toggle function
     panels.forEach(panel => panel.addEventListener('click', toggleOpenPanel));
+    //  listen for an event end event
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
     
   </script>
 
