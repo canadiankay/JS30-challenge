@@ -39,9 +39,12 @@
     const specId = comments.find(comment => comment.id === 823423);
     console.log({specId});
     
-    // Array.prototype.findIndex()
-    // Find the comment with this ID
-    // delete the comment with the ID of 823423
+    // Array.prototype.findIndex() 
+    //find the comment with ID 823423
+    const findIndex = comments.findIndex(comment => comment.id === 823423);
+    console.log(findIndex); //will return 1 since it is the second item
+    //delete the comment with the ID of 823423
+
 
   </script>
 </body>
