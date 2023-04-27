@@ -44,7 +44,8 @@
     const findIndex = comments.findIndex(comment => comment.id === 823423);
     console.log(findIndex); //will return 1 since it is the second item
     //delete the comment with the ID of 823423
-
+    comments.splice(findIndex, 1); //// splice --> start position and how many to do
+    console.table(comments);
 
   </script>
 </body>
