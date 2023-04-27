@@ -49,3 +49,4 @@
 ### Day 6:
 - **Array.prototype.some()** method --> will check if atleast one item in an array will meet what youre looking for
 - **Array.prototype.every()** method --> does every item match what you are looking for
+- **Array.prototype.find()** method --> like filter, but instead of returning a subset of the array it only returns just the one item you are looking for
