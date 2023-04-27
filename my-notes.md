@@ -45,3 +45,7 @@
 - an element in CSS can be both a flex item and flex container
 - default of flexbox stacks items left to right
 - flex: 1 (takes up an even amount of room) vs flex: 5 (element will take up 5x as much room)
+
+### Day 6:
+- **Array.prototype.some()** method --> will check if atleast one item in an array will meet what youre looking for
+- **Array.prototype.every()** method --> does every item match what you are looking for

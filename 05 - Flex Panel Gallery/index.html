@@ -46,6 +46,12 @@
       this.classList.toggle('open');
     };
 
+    // function that will listen for transitionend
+    // there will be multiple transitionend events
+    function toggleActive(event) {
+      console.log('event.propertyName')
+    };
+
     // on each panel we will listen for click on each of them then run toggle function
     panels.forEach(panel => panel.addEventListener('click', toggleOpenPanel));
     //  listen for an event end event
